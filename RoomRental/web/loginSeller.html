@@ -1,0 +1,64 @@
+<html>   
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<title> Login Page </title>  
+<style>   
+Body {  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color: #828a95;
+} 
+h1{
+    color:#181d27;
+}
+button {   
+       background-color: #f7f5fb;   
+       width: 30%;
+       border-radius: 15px;
+        color: #181d27;   
+        padding: 15px;
+        display: block;
+        margin: auto;   
+        border: none;   
+        cursor: pointer;   
+         }   
+ form {   
+        border: 3px solid;
+        color:white;
+        border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(38, 33, 61, 0.5);
+    }   
+ input[type=text], input[type=password] {   
+        width: 100%;   
+        margin: 8px 0;  
+        padding: 12px 20px;   
+        display: inline-block;   
+        border: 2px solid;   
+        box-sizing: border-box;   
+    }  
+ button:hover {   
+        opacity: 0.7;   
+    }   
+  
+        
+     
+ .container {   
+        padding: 25px;   
+        background-color: #181d27;
+        border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(38, 33, 61, 0.5);
+    }   
+</style>   
+</head>    
+<body>    
+    <center> <h1> Seller Login Form </h1> </center>   
+    <form action="LoginSellerServlet" method="post">  
+        <div class="container">   
+            <label>Username : </label>   
+            <input type="text" placeholder="Enter Username" name="username" required>  
+            <label>Password : </label>   
+            <input type="password" placeholder="Enter Password" name="password" required>  
+            <button type="submit">Login</button>  
+        </div>   
+    </form>     
+</body>     
+</html>

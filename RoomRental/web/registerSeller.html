@@ -1,0 +1,87 @@
+<!DOCTYPE html>  
+<html>  
+    <head>
+        <title>Register</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<style>  
+body{  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color: #828a95;  
+}  
+.container {  
+    padding: 50px;  
+  background-color: #181d27;
+  color:white;
+  border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(38, 33, 61, 0.5);
+}  
+  
+input[type=text], input[type=password], textarea {  
+  width: 100%;  
+  padding: 15px;  
+  margin: 5px 0 22px 0;  
+  display: inline-block;  
+  border: none;  
+  background: #f1f1f1;  
+}  
+input[type=text]:focus, input[type=password]:focus {  
+  background-color: orange;  
+  outline: none;  
+}  
+ div {  
+            padding: 10px 0;  
+         }  
+hr {  
+  border: 1px solid #f1f1f1;  
+  margin-bottom: 25px;  
+}  
+.registerbtn {  
+  background-color: #f7f5fb;  
+  color: #181d27;  
+  padding: 16px 20px;
+  display:block;
+  margin: auto;  
+  border: none;  
+  cursor: pointer;  
+  width: 30%;  
+  opacity: 0.9;  
+}  
+.registerbtn:hover {  
+  opacity: 1;  
+}  
+</style>  
+</head>  
+<body>  
+<form action="RegisterSellerServlet" method="post">  
+  <div class="container">
+  <center>  <h1> Seller Registration Form</h1> </center>  
+  <hr>  
+  <label>Name:</label>   
+<input type="text" name="name" placeholder= "Name" size="15" required /> 
+<label>   
+Phone :  
+</label>  
+<input type="text" name="phone" placeholder="Phone no." size="10" required/>
+<label>   
+Aadhar Number:  
+</label>  
+<input type="text" name="aadhar" placeholder="Aadhar Number" size="12" required/>
+
+<label>Username:</label>    
+<input type="text" name="username" placeholder="Username" size="15" required />   
+  
+ 
+<label>Password:</label>    
+<input type="password" name="password" placeholder="Enter your Password!" size="15" required />  
+
+<label>   
+Gender :  
+</label><br>  
+<input type="radio" value="Male" name="gender" checked > Male   
+<input type="radio" value="Female" name="gender"> Female   
+<input type="radio" value="Other" name="gender"> Other  
+  
+<button type="submit" class="registerbtn">Register</button>    
+</form>  
+</body>  
+</html>

@@ -1,0 +1,96 @@
+<html>   
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<title>Search</title>  
+<style>   
+Body {  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color: #828a95;
+color:white;  
+}  
+button {   
+       background-color: #f7f5fb;   
+       width: 30%;  
+        color: #181d27;   
+        padding: 15px;
+        display: block;
+        margin: auto;   
+        border: none;   
+        cursor: pointer;   
+         }   
+ form {   
+        border: 3px solid #f1f1f1;
+        border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(38, 33, 61, 0.5);
+  color: white;
+    }   
+ input[type=text], input[type=password] {   
+        width: 100%;   
+        margin: 8px 0;  
+        padding: 12px 20px;   
+        display: inline-block;   
+        border: 2px solid;   
+        box-sizing: border-box;   
+    }  
+ button:hover {   
+        opacity: 0.7;   
+    }   
+  
+        
+     
+ .container {   
+        padding: 25px;   
+        background-color: #181d27;
+        border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(38, 33, 61, 0.5);
+    }   
+</style>   
+</head>    
+<body>    
+    <center> <h1> Search Hostels</h1> </center>   
+    <form action="searchback.jsp" method="post">  
+        <div class="container">   
+            <label>Pincode : </label>
+            <input type="text" placeholder="Enter the pincode" name="pincode" required>
+            <br>
+            <br>
+            <label>   
+            Bed:  
+            </label><br>  
+            <input type="radio" value="single" name="bed" checked > Single-bed  
+            <input type="radio" value="double" name="bed"> Double-bed
+            <br>
+            <br>
+            <label>   
+            Fridge :  
+            </label><br>  
+            <input type="radio" value="Yes" name="fridge" checked > Yes  
+            <input type="radio" value="No" name="fridge"> No
+            <br>
+           <br>
+           <label>   
+            Wi-Fi:  
+           </label><br> 
+            <input type="radio" value="Yes" name="wifi" checked > Yes  
+            <input type="radio" value="No" name="wifi"> No
+            <br>
+            <br>
+            <label>   
+            Air-Conditioned:  
+            </label><br>  
+            <input type="radio" value="Yes" name="ac" checked > Yes   
+            <input type="radio" value="No" name="ac"> No
+            <br>
+            <br>
+            <label>   
+              Geyser:  
+            </label><br>  
+            <input type="radio" value="Yes" name="geyser" checked > Yes  
+            <input type="radio" value="No" name="geyser"> No
+            
+            <button type="submit">Search</button>  
+        </div>   
+    </form>     
+</body>     
+</html>
+
